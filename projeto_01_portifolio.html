@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'Ubuntu','Arial', sans-serif;
+    }
+
+    footer {
+      width: 100%;
+      background: #696969;
+      color: white;
+
+    }
+
+    .container-footer-all {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px;
+    }
+
+    .container-body {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .colum1 {
+      max-width: 400px;
+    }
+
+    .colum1 h1 {
+      font-size: 22px;
+    }
+
+    .colum1 p {
+      font-size: 14px;
+      color: #C7C7C7;
+      margin-top: 20px;
+    }
+
+    .colum2 {
+      max-width: 400px;
+
+    }
+
+    .colum2 h1 {
+      font-size: 22px;
+    }
+
+    .row {
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .row img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .row label {
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #C7C7C7;
+    }
+
+    .colum3 {
+      max-width: 400px;
+    }
+
+    .colum3 h1 {
+      font-size: 22px;
+    }
+
+    .row2 {
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .row2 img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .row2 label {
+      margin-top: 10px;
+      margin-left: 20px;
+      max-width: 140px;
+    }
+
+    .container-footer {
+      width: 100%;
+      background:#696969;
+    }
+
+    .footer {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .copyright {
+      color: #C7C7C7;
+    }
+
+    .copyright a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .information a {
+      text-decoration: none;
+      color: #C7C7C7;
+    }
+
+    .pics img {
+      max-width: 400px;
+      max-height: 40vh;
+    }
+
+    @media screen and (max-width: 1100px) {
+
+      .container-body {
+        flex-wrap: wrap;
+      }
+
+      .colum1 {
+        max-width: 100%;
+      }
+
+      .colum2,
+      .colum3 {
+        margin-top: 40px;
+      }
+    }
+
+    .conheça_o_hotel .grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    .conheça_o_hotel .grid li {
+      height: 350px;
+      padding: 20px;
+      border-radius: 4px;
+      background-clip: content-box;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .conheça_o_hotel .grid li.small {
+      flex-basis: 40%;
+
+    }
+
+    .conheça_o_hotel .grid li.large {
+      flex-basis: 60%;
+
+    }
+    .conheça_o_hotel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 50px;
+
+    }
+    .conheça_o_hotel h3{
+
+        
+        margin-bottom: 35px;
+        color: #191c03;
+    }
+
+    .conheça_o_hotel p {
+        max-width: 800px;
+        margin-bottom: 35px;
+        color: #191c03;    
+        text-align: center;
+
+    }
+    .conheça_o_hotel hr{
+        width: 200px;
+        height: 4px;
+        background-color: #191c03;
+        margin-bottom: 70px;
+        border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #696969;height: 13vh;" >
+    <a class="navbar-brand" href="#">Honny Batista de Oliveira</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Contact
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://github.com/honnyevol">github</a>
+            <a class="dropdown-item" href="https://www.facebook.com/honny.batistadeoliveira/">facebook</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">whatsapp-55-62-991318416</a>
+          </div>
+        </li>
+        
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="max-height: 85vh;">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="welcome2.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item" style="max-height: 85vh;">
+        <img class="d-block w-100" src="800.jpg" alt="Second slide">
+        <a href="https://br.freepik.com/fotos-vetores-gratis/cartao-de-visita">Cartão de visita foto criado por tirachard - br.freepik.com</a>
+      </div>
+      <div class="carousel-item" style="max-height: 85vh;">
+        <img class="d-block w-100" src="terceiro.png" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="jumbotron"  style="text-align: center;background-color:#C0C0C0;margin-bottom: 0%;">
+    <h1 class="display-4">Hello, I am Honny!</h1>
+    <p class="lead" style="font-family: 'Open Sans', sans-serif;font-size: 1.5rem;" >I am a programer that loves to spend my hours at work an nerver give up to do my best  for my Clients!</p>
+    <hr class="my-4">
+    <p style="font-family: 'Open Sans', sans-serif;font-size: 1.5rem;">Do you know that good page , awesome  for your job? I can do! And for sure  your landing papes , your home pages an all kinds of  pages never be the same again.
+      I deliver the job fast and no problems with time to finish the work.
+    </p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" style="background:black;" href="https://www.facebook.com/honny.batistadeoliveira/" role="button">Learn more</a>
+    </p>
+  </div>
+  <section style="display: flex;flex-direction: row;justify-content: space-around;background-color: #DCDCDC	;flex-wrap: wrap;">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" style="max-height: 30rem;"  src="h3.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">Call me on whatsapp</h5>
+        <p class="card-text" style="text-align: center;font-family: 'Open Sans', sans-serif;font-size: 1.5rem;">My phone number are whatsapp-55-62-991318416.</p>
+        <a href="https://www.facebook.com/honny.batistadeoliveira/" class="btn btn-primary" style="background:black;">Go check it out!</a>
+      </div>
+      
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" style="max-height: 30rem;" src="h1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">Work hour</h5>
+        <p class="card-text" style="text-align: center;font-family: 'Open Sans', sans-serif;font-size: 1.5rem;">My work hour is cheap. Click the button and check it out!</p>
+        <a href="https://www.facebook.com/honny.batistadeoliveira/" class="btn btn-primary" style="background:black;">Go check it out!</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" style="max-height: 30rem;" src="h7.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;"> Github</h5>
+        <p class="card-text" style="text-align: center;font-family: 'Open Sans', sans-serif;font-size: 1.5rem;">See my codes on github and find out my work and my potifolio!</p>
+        <a href="https://github.com/honnyevol" class="btn btn-primary" style="background:black;">Go github</a>
+      </div>
+    </div>
+  </section>
+  <div class="jumbotron jumbotron-fluid"  style="text-align: center;background-color: #C0C0C0;margin-bottom: 0%;">
+    <div class="container">
+      <h1 class="display-4">Competences</h1>
+      <p class="lead" style="font-family: 'Open Sans', sans-serif;font-size: 1.5rem;">Hi sir! I am Honny Batista de Oliveira and , as you see my friend, i am a programer. I do front end sites, and can to work with another professinal for some other correlated field. I am hard work guy an no are limits of  daily hours for my activit. I am fluent in tree languages as english , portuguese and spanish.My field are html, css an javascript sites and games. </p>
+    </div>
+  </div>
+  <section style="display: flex;flex-direction: row;justify-content: space-around;background-color: #DCDCDC	;">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="koala.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <button type="button" class="btn btn-primary" style="background:black;" data-toggle="modal" data-target="#exampleModal">
+          Abrir video responsivo
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lXY0pGYJdaw"
+                    id="iframeVideo"></iframe>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="koala.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <button type="button" class="btn btn-primary" style="background:black;" style="background:black;" data-toggle="modal" data-target="#exampleModal">
+          Abrir video responsivo
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lXY0pGYJdaw"
+                    id="iframeVideo"></iframe>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="conheça_o_hotel" style="background-color: #C0C0C0;" >
+    <h3>Try me for your team!</h3>
+    <p style="font-family: 'Open Sans', sans-serif;font-size: 1.5rem;">I am able to work in a regular home office. Try me for your team i  am ready to learn new tecnologies. I am resposable with jobs and always in time!</p>
+    <hr>
+    <ul class="grid">
+      <li class="small" style="background-image: url('as.jpg');"></li>
+      <li class="large" style="background-image: url('terceiro.png');"></li>
+      <li class="large" style="background-image: url('ll.jpg');"></li>
+      <li class="small" style="background-image: url('bb.jpg');"></li>
+    </ul>
+
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script type="text/javascript">
+    //Url del video a reproducir
+    var videoSrc = 'https://www.youtube.com/embed/lXY0pGYJdaw';
+
+    //Al abrir la ventana modal, le agregué autoplay igual a 1, para que se reproduzca
+    //automáticamente, en caso de que no se requiera la autoreproducción, se quita 
+    //esa parte "?autoplay=1".
+    $('#exampleModal').on('show.bs.modal', function () {
+      var iframe = $('#iframeVideo');
+      iframe.attr("src", videoSrc + "?autoplay=1");
+    });
+
+    //Al cerrar la ventana modal, solamente reasignamos el video al atributo del iframe
+    //y eso ocasiona que se detenga la reproducción del archivo,
+    //aunque también podríamos haber dejado el valor src en null. :)
+    $('#exampleModal').on('hidden.bs.modal', function (e) {
+
+      var iframe = $('#iframeVideo');
+      iframe.attr("src", videoSrc);
+
+    });
+  </script>
+
+  <footer>
+
+    <div class="container-footer-all">
+
+      <div class="container-body">
+
+        <div class="colum1">
+          <h1>About me</h1>
+
+          <p>I am a nice guy 35 old from brazil and with four years study the programation field , you find me easily on facebook as honny batista de oliveira</p>
+
+        </div>
+
+        <div class="colum2">
+
+          <h1>Social Media</h1>
+
+          <div class="row">
+            <img src="001-facebook.png">
+            <label>call me on Facebook</label>
+          </div>
+          
+          <div class="row">
+            <img src="011-instagram.png">
+            <label>Call me on Instagram</label>
+          </div>
+          
+          <div class="row">
+            <img src="003-whatsapp.png">
+            <label>whatsapp-55-62-991318416</label>
+          </div>
+
+
+        </div>
+
+        <div class="colum3">
+
+          <h1>Contact Information</h1>
+
+          <div class="row2">
+            <img src="icon/house.png">
+            <label>Country Brazil, State Goiás, City Aparecida de Goiânia </label>
+          </div>
+
+          <div class="row2">
+            <img src="icon/smartphone.png">
+            <label>whatsapp-55-62-991318416</label>
+          </div>
+
+          <div class="row2">
+            <img src="icon/contact.png">
+            <label>honnyevol@gmail.com</label>
+          </div>
+
+        </div>
+
+      </div>
+
+   
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
