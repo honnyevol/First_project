@@ -133,21 +133,7 @@
       max-height: 40vh;
     }
 
-    @media screen and (max-width: 1100px) {
-
-      .container-body {
-        flex-wrap: wrap;
-      }
-
-      .colum1 {
-        max-width: 100%;
-      }
-
-      .colum2,
-      .colum3 {
-        margin-top: 40px;
-      }
-    }
+   
 
     .conheça_o_hotel .grid {
       width: 100%;
@@ -157,6 +143,7 @@
     }
 
     .conheça_o_hotel .grid li {
+      min-width: 350px;
       height: 350px;
       padding: 20px;
       border-radius: 4px;
@@ -201,6 +188,32 @@
         background-color: #191c03;
         margin-bottom: 70px;
         border: none;
+    }
+    @media screen and (max-width: 1100px) {
+     .card{
+       margin-bottom: 1.5rem;
+     }
+     .conheça_o_hotel .grid li {
+     
+     
+     margin-right: 3.5rem;    
+      
+    }
+     
+    
+     .container-body {
+       flex-wrap: wrap;
+     }
+     .colum1{
+     text-align: center;
+     }
+     .colum2,
+     .colum3 {
+     margin-top: 40px;
+     margin-left: auto;
+     margin-right: auto;
+     }
+     
     }
   </style>
 </head>
@@ -315,13 +328,13 @@
   </div>
   <section style="display: flex;flex-direction: row;justify-content: space-around;background-color: #DCDCDC	;">
     <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="koala.jpg" alt="Card image cap">
+      <img class="card-img-top" src="icon1.png" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
           content.</p>
         <button type="button" class="btn btn-primary" style="background:black;" data-toggle="modal" data-target="#exampleModal">
-          Abrir video responsivo
+          To open Video
         </button>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -350,42 +363,7 @@
 
       </div>
 
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="koala.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <button type="button" class="btn btn-primary" style="background:black;" style="background:black;" data-toggle="modal" data-target="#exampleModal">
-          Abrir video responsivo
-        </button>
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lXY0pGYJdaw"
-                    id="iframeVideo"></iframe>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
   </section>
   <section class="conheça_o_hotel" style="background-color: #C0C0C0;" >
