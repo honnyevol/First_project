@@ -142,7 +142,7 @@
 
     }
 
-    .conheça_o_hotel .grid li {
+    .conheça_o_hotel .grid img {
       min-width: 350px;
       height: 350px;
       padding: 20px;
@@ -152,13 +152,13 @@
       background-position: center;
     }
 
-    .conheça_o_hotel .grid li.small {
-      flex-basis: 40%;
+    .conheça_o_hotel .grid img .small {
+      flex-basis: 39%;
 
     }
 
-    .conheça_o_hotel .grid li.large {
-      flex-basis: 60%;
+    .conheça_o_hotel .grid img .large {
+      flex-basis: 59%;
 
     }
     .conheça_o_hotel{
@@ -193,14 +193,21 @@
      .card{
        margin-bottom: 1.5rem;
      }
-     .conheça_o_hotel .grid li {
-     
-     
-     margin-right: 3.5rem;    
+     .conheça_o_hotel .small {
+      max-width: 150px;
       
     }
-     
-    
+    .conheça_o_hotel .large{
+      max-width: 150px;
+      
+    }
+    .conheça_o_hotel .grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
      .container-body {
        flex-wrap: wrap;
      }
@@ -371,10 +378,11 @@
     <p style="font-family: 'Open Sans', sans-serif;font-size: 1.5rem;">I am able to work in a regular home office. Try me for your team i  am ready to learn new tecnologies. I am resposable with jobs and always in time!</p>
     <hr>
     <ul class="grid">
-      <li class="small" style="background-image: url('as.jpg');"></li>
-      <li class="large" style="background-image: url('terceiro.png');"></li>
-      <li class="large" style="background-image: url('ll.jpg');"></li>
-      <li class="small" style="background-image: url('bb.jpg');"></li>
+      <img class="small" src='as.jpg'>
+      <img class="large" src='terceiro.png'>
+      <img class="large" style="max-width: 720px;" src='ll.jpg'>
+      <img class="small"  src='bb.jpg'>
+      
     </ul>
 
   </section>
